@@ -54,15 +54,16 @@ cd $HOME
 sudo apt update
 sudo apt install spotify-client -y
 
-# Install Audacity, GIMP, Handbrake, Inkscape, Kdenlive, OBS Studio
-echo "Installing Audacity, GIMP, Handbrake, Inkscape, Kdenlive, OBS Studio..."
-sudo apt install audacity gimp handbrake inkscape kdenlive obs-studio -y
+# Install Audacity, GIMP, Handbrake, Inkscape, Kdenlive, OBS Studio, Shotcut
+echo "Installing Audacity, GIMP, Handbrake, Inkscape, Kdenlive, OBS Studio, Shotcut..."
+sudo apt install audacity gimp handbrake inkscape kdenlive obs-studio shotcut -y
 
-# Install Discord, Telegram, Steam via Flatpak
-echo "Installing Discord, Telegram, Steam via Flatpak..."
+# Install Discord, Telegram, Steam via Flatpak, Bottles
+echo "Installing Discord, Telegram, Steam, Bottles via Flatpak..."
 flatpak install flathub com.discordapp.Discord -y
 sudo apt install telegram-desktop -y  # Installing Telegram using apt as well, as requested.
 flatpak install flathub com.valvesoftware.Steam -y
+flatpak install flathub com.usebottles.bottles -y
 
 # Install Archive Utilities
 echo "Installing archive utilities..."
