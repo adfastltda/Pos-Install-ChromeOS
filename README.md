@@ -21,4 +21,4 @@ This script is provided as-is, without any warranty. The author is not responsib
 This is the quickest method but also the riskiest because it doesn't allow you to review the script's contents before running it.  **Only use this method if you trust the script's source completely.**
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/adfastltda/Pos-Install-ChromeOS/refs/heads/main/install.sh)
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/adfastltda/Pos-Install-ChromeOS/main/install.sh)
