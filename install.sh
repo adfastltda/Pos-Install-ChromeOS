@@ -39,10 +39,6 @@ echo "Installing Flatpak and Flathub..."
 sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Install Audio/Video Codecs and Libraries
-echo "Installing audio/video codecs and libraries..."
-sudo apt install faad ffmpeg gstreamer1.0-fdkaac gstreamer1.0-libav gstreamer1.0-vaapi gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly lame libavcodec-extra libavcodec-extra59 libavdevice59 libgstreamer1.0-0 sox twolame vorbis-tools -y
-
 # Install VLC and Kodi
 echo "Installing VLC and Kodi..."
 sudo apt install vlc kodi -y
@@ -60,15 +56,11 @@ sudo apt install spotify-client -y
 echo "Installing Audacity, GIMP, Handbrake, Inkscape, Kdenlive, OBS Studio, Shotcut..."
 sudo apt install audacity gimp handbrake inkscape kdenlive obs-studio shotcut -y
 
-# Install Discord, Telegram, Steam via Flatpak, Bottles
+# Install Discord, Telegram, Steam, Bottles via Flatpak, 
 echo "Installing Discord, Telegram, Steam, Bottles via Flatpak..."
 flatpak install flathub com.discordapp.Discord -y
 sudo apt install telegram-desktop -y  # Installing Telegram using apt as well, as requested.
 flatpak install flathub com.valvesoftware.Steam -y
 flatpak install flathub com.usebottles.bottles -y
-
-# Install Archive Utilities
-echo "Installing archive utilities..."
-sudo apt install arc arj cabextract lhasa p7zip p7zip-full p7zip-rar rar unrar unace unzip xz-utils zip -y
 
 echo "Installation complete!"
