@@ -4,7 +4,7 @@
 echo "Updating and upgrading system packages..."
 sudo apt update && sudo apt upgrade -y
 #OUTROS
-sudo apt install libsquashfuse0 squashfuse fuse snapd-y
+sudo apt install libsquashfuse0 squashfuse fuse snapd -y
 
 # Add Windsurf repository and install Windsurf
 echo "Adding Windsurf repository..."
